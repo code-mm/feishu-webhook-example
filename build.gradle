@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.my'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.11'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
+    implementation 'org.json:json:20230227'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
+}
+
+test {
+    useJUnitPlatform()
+}
